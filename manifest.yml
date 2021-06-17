@@ -4,6 +4,8 @@ applications:
     path: build/libs/pal-tracker.jar
     routes:
       - route: pal-tracker-manoj-rawat.apps.evans.pal.pivotal.io
+    services:
+      - tracker-database
     env:
       WELCOME_MESSAGE: Hello from the review environment-2
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
